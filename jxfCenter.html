@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+   <meta name="format-detection" content="telephone=no, email=no" />
+   <title>鲁原麦糁</title>
+    <meta name="keywords" content="景兴坊,郓城,麦糁,麦仁,小麦" />
+    <meta name="description" content="景兴坊,郓城,麦糁,麦仁,小麦" />
+   <link href="css/style.css" rel="stylesheet">
+   <script src="http://www.jq22.com/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/swiper.min.css">
+   <style>
+   		body{padding:0px; margin:0px;font-family: serif}
+   		.jxf-weui{background:#f4f4f4; float: left; width: 100%;}
+   		.swiper-container {width: 100%;height: 228px;border-bottom: 1px solid #f4f4f4;}
+	    .swiper-slide {text-align: center;font-size: 18px;background: #fff;display: -webkit-box; display: -ms-flexbox;    display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;}
+		.slide img{width:100%;}
+		
+		.center-flxe{
+			width:100%;
+			padding:0 2%; 
+			float:left; 
+			background:#fff;
+			margin:10px 0;
+			font-size: 14px;
+		}
+		.center-flxe span{
+			display:block; 
+			float:left; 
+			padding:10px 0; 
+			line-height:30px;
+		}
+		.flxe-name{
+			width:42%;
+			font-size: 14px;
+			text-align: left;
+			letter-spacing: 1px;
+			overflow: hidden;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		    -o-text-overflow: ellipsis;
+		    -icab-text-overflow: ellipsis;
+		    -khtml-text-overflow: ellipsis;
+		    -moz-text-overflow: ellipsis;
+		    -webkit-text-overflow: ellipsis;
+		}
+		.flxe-cur{
+			width:28%;
+			line-height: 28px!important;
+		}
+		.flxe-cur i{
+			border:1px solid #a6ca62; 
+			color:#a6ca62; 
+			width:80%; 
+			margin:0 auto;
+			display:block; 
+			border-radius: 6px;  
+			text-align: center;
+		    font-style: normal;
+	    }
+		.flxe-price{
+			width:30%;
+			color:#ff143b;
+			text-align: center;
+			float:right!important;
+		}
+		.flxe-price em{
+			font-style: normal;
+			color:#999;
+		 }
+		 .spce-list{
+		 	background: #fff;
+		    float: left;
+		    width: 100%;
+		 }
+		 .spce-list h3{
+		 	font-size:16px;
+		 	text-align: center;
+		 	color: #fff;
+		 	font-weight:normal;    
+		 	margin: 0;
+    		background: #a6ca62;
+    		padding:10px 0 5px;
+		 }
+		 .spce-list h3 span{
+		    display: block;
+		    font-size: 10px;
+		    line-height: 26px;
+		    letter-spacing: 3px;
+		}
+		 .spce-list ul{
+		 	list-style: none;
+		    padding: 0%;
+		    margin: 0;
+		    width: 100%;
+		    float: left;
+		 }
+		 .spce-list  ul li{
+		 	width:96%;
+		 	margin:0 2%;	
+		 	float:left;
+		 	border-bottom:1px solid #efefef;
+		 	line-height:40px;
+		 	color:#999;
+		 	font-size:14px;
+		 }
+		 .spce-list  ul li span{
+		 	color:#222;
+		 	display: inline-block;
+		 	width:25%;
+		 	margin-right: 3%;
+		 	text-align:justify;
+ 		    text-justify:distribute-all-lines;/*ie6-8*/
+  		    text-align-last:justify;/* ie9*/
+ 		    -moz-text-align-last:justify;/*ff*/
+  		    -webkit-text-align-last:justify;/*chrome 20+*/
+		 }
+		 .spce-list  ul li:last-child{
+			border-bottom:none;
+		}
+		.swiper-slide img{
+			width:100%;
+		}
+		.swiper-pagination-bullet-active{
+			background: #a6ca62;
+		}
+		
+		.spce-txt{
+			width:100%;
+			padding:0 4% 5%;
+			float:left;
+		}
+		.spce-img{
+			width:100%;
+			float:left;
+			margin:8% 0 0;
+		}
+		.spce-img img{
+			width:100%;
+		}
+		.spce-txt p{
+			color: #333;
+		    font-size: 14px;
+		    text-indent: 2em;
+		    letter-spacing: 2px;
+		    line-height: 25px;
+		    float: left;
+		    width: 100%;
+		    clear: both;
+		    margin: 15px 0 0;
+		}
+		.spce-block{
+			width: 90%;
+		    margin: 0 5%;
+		    color: #a6ca62;
+		    font-size: 18px;
+		    text-align: center;
+		    padding: 5% 0;
+		    font-weight: bold;
+		    letter-spacing: 3px;
+		}
+		.spce-block span{
+			 color: #e2c531;
+   			 padding-left: 10px;
+		}
+		.spce-prod {
+			width:96%;
+			margin:0 2%;
+		}
+		.spce-prod p{
+			margin:5% 0;
+		}
+		.spce-value{
+			padding-bottom:5%;
+		}
+		.spce-value img,
+		.spce-prod img{
+			width:100%;
+		}
+		.center-name{
+			text-align: center;
+		    float: left;
+		    width: 100%;
+		    margin-bottom: 25px;
+		}
+		.center-name span{
+			padding: 20px 0 10px;
+		    display: block;
+		    width: 100%;
+		    float: left;
+		    letter-spacing: 6px;
+		    color:#a6ca62;
+		    font-size: 20px;
+		}
+		.center-name p{
+			margin: 0;
+		    clear: both;
+		    width: 100%;
+		    letter-spacing: 10px;
+		    color: #e2c531;
+		    font-size: 18px;
+		}
+		.center-block{
+			float: left;
+    		width: 100%;
+		}
+		.center-block span{
+			width: 20%;
+		    display: block;
+		    float: left;
+		    background: #a6ca62;
+		    border-radius: 500px;
+		    padding: 13px 20px;
+		    text-align: center;
+		    line-height: 24px;
+		    margin-left: 4%;
+		    color:#fff;
+		    font-size: 16px;
+		}
+		.name-txt{   
+		 	clear: both;
+		    width: 100%;
+		    float: left;
+		    padding: 0 3%;
+		    margin: 20px 0;
+		    text-align: center;
+		    line-height: 25px;
+		    letter-spacing: 3px;
+		    font-size: 14px;
+		  }
+		  .name-img{    
+		  	width: 94%;
+    		margin: 0 3% 20px;
+    	  }
+		  .name-img img{
+		  	width:100%;
+		  }
+		  @media screen and (min-width:320px){
+		  		.center-block span{padding: 8px 10px;}
+		  }
+		  @media screen and (min-width:360px) {
+		  		.center-block span{padding: 13px 19px;}
+		  }
+		  @media screen and (min-width:375px) and (max-width:390px){
+		  		.center-block span{padding: 13px 19px;}
+		  }
+		  @media screen and (min-width:400px){
+		  		.center-block span{padding: 18px 18px;}
+		  }
+   </style>
+</head>
+<body>
+<div class="jxf-weui">
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	      <div class="swiper-slide"><img src="img/img3.jpg"></div>
+	      <div class="swiper-slide"><img src="img/img9.jpg"></div>
+	      <div class="swiper-slide"><img src="img/img2.jpg"></div>
+	    </div>
+	    <div class="swiper-pagination"></div>
+     </div>
+		
+	 <div class="center-flxe">
+	 		<span class="flxe-name">鲁原麦糁(山东特产)</span>
+	 		<span class="flxe-cur"><i>2.5kg</i></span>
+	 		<span class="flxe-price">¥40.00<em>/箱</em></span>
+	 </div>
+	 
+	 <div class="spce-list">
+	 	<div class="center-name">
+		 	<span>农家自产麦糁</span>
+		 	<p>纯/麦/谷/物/颗/粒</p>
+	 	</div>
+	 	<div class="center-block">
+	 		<span>日常<br>熬粥</span>
+	 		<span>配米蒸饭</span>
+	 		<span>全麦豆浆</span>
+	 		<span>菜肴辅食</span>
+	 	</div>
+	 	<div class="name-txt">麦糁含有丰富的膳食纤维和碳水化合物，其蛋白质，维生素，钙等均高于其他经常食用的杂粮，是北方人的主食。</div>
+	 	<div class="name-img"><img src="img/img.jpg"></div>
+	 </div>	
+	 
+	 <div class="spce-list">
+	 	<h3>产品介绍<span>PRODUCT INTRODUCTION</span></h3>
+	 	<ul>
+	 		<li><span>产品名称：</span>鲁原麦糁</li>
+	 		<li><span>配料：</span>小麦</li>
+	 		<li><span>规格：</span>4瓶 X 600g</li>
+	 		<li><span>保质期：</span>12个月</li>
+	 		<li><span>食用方法：</span>清水淘洗，温火煮至糁花爆开</li>
+	 		<li><span>贮藏方法：</span>贮存在阴凉通风处</li>
+	 		<li><span>产地：</span>山东.郓城</li>
+	 		
+	 	</ul>
+	 </div>
+	 <div class="spce-list">
+	 	<h3>产品展示<span>PRODUCT DISPLAY</span></h3>
+	 	<div class="spce-prod">
+	 		<p><img src="img/img6.jpg"></p>
+	 		<p><img src="img/img7.jpg"></p>
+	 		<p><img src="img/img8.jpg"></p>
+	 	</div>
+	 </div>
+	 <div class="spce-list">
+	 	<h3>营养价值<span>NUTRITIVE VALUE</span></h3>
+	 	<div class="spce-block">绿色有机<span>吃的放心</span></div>
+	 	<div class="spce-value"><img src="img/img5.jpg"></div>
+	 </div>
+	 <div class="spce-list">
+	 	<h3>优质产地<span>PRODUCING STYLE</span></h3>
+ 		<div class="spce-txt">
+ 			<div class="spce-img"><img src="img/img4.jpg"></div>
+ 			<p>山东菏泽地处黄河冲击平原，土壤肥沃。一年四季不停息的劳作，未曾改变的古法耕种，人工除草，无污染土壤、光照充足、优质水源灌溉，形成绿色健康的生态链。</p>
+ 			<p>现磨留鲜，锁存营养成分。让消费者真正的实现从田间地头到餐桌的营养，保证品质，让每口饭都更健康、更安心。一切都是为了让消费者更好地享受美食与生活，同时也向消费者传递一份健康、乐活、充满正能量的生活态度！</p>
+	 	</div>
+	 </div>
+</div>
+
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+	  autoplay:true,
+	  animationTime:6000,
+    });
+</script>
+</body>
+</html>
